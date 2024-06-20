@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS2 Config Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="title">
+      <h1>CS2 Autoexec Generator</h1>
+    </div>
+    <div id="info">
+      <p id="info_desc">
+        This tool generates an autoexec.cfg file for Counter-Strike 2.
+      </p>
+      <ul id="info_list">
+        <li class="info_list_item">
+          Place the autoexec.cfg file inside the folder
+          <em>(Counter-Strike Global Offensive\game\csgo\cfg)</em> and it will
+          be executed automatically everytime the game is launched.
+        </li>
+        <li class="info_list_item">
+          Some settings refer to values only as (0 / 1) or (false / true). These
+          are interchangeable.
+        </li>
+        <li class="info_list_item">
+          Unfilled input boxes will not be added to the autoexec.cfg file.
+        </li>
+        <li class="info_list_item">
+          The game will not crash if you enter invalid values, but it may not
+          work as intended.
+        </li>
+      </ul>
+      <p id="update_info">
+        This tool is a work in progress. Many options/commands are still
+        unavailable.
+      </p>
+    </div>
+    <form id="config_form" action="#" method="get"></form>
+    <script src="script.js"></script>
+  </body>
+</html>
