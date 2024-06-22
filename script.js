@@ -7,10 +7,20 @@ const fields = [
   { type: "select", name: "cl_autohelp", alt: "Autohelp pop-ups" },
   {
     type: "select",
+    name: "cl_buywheel_donate_key",
+    alt: "Enable/disable hotkey used to donate weapons when purchasing from buywheel",
+  },
+  {
+    type: "select",
     name: "cl_buywheel_nonumberpurchasing",
     alt: "Disable number keys when in buy menu",
   },
   { type: "select", name: "cl_color", alt: "Player color on radar" },
+  {
+    type: "select",
+    name: "cl_crosshair_friendly_warning",
+    alt: "Show friendly warning under crosshair",
+  },
   {
     type: "select",
     name: "cl_crosshair_sniper_width",
@@ -85,8 +95,34 @@ const fields = [
   { type: "select", name: "cl_showloadout", alt: "Show loadout on HUD" },
   {
     type: "select",
+    name: "cl_show_equipped_character_for_player_avatars",
+    alt: "Show agent skins as avatar instead of player avatars",
+  },
+
+  {
+    type: "select",
+    name: "cl_silencer_mode",
+    alt: "Enable/disable silencer removal from silenced weapons",
+  },
+  {
+    type: "select",
+    name: "cl_sniper_auto_rezoom",
+    alt: "Auto re-zoom after sniper shot",
+  },
+  {
+    type: "select",
+    name: "cl_sniper_delay_unscope",
+    alt: "Delay sniper unscope after firing",
+  },
+  {
+    type: "select",
     name: "cl_teamcounter_playercount_instead_of_avatars",
     alt: "Show playercount instead of avatars on HUD",
+  },
+  {
+    type: "select",
+    name: "cl_use_opens_buy_menu",
+    alt: "Allow opening buy menu with use key",
   },
   { type: "select", name: "con_enable", alt: "Enable developer console" },
   {
@@ -166,10 +202,12 @@ const fields = [
 const options = {
   cl_allow_animated_avatars: ["true", "false"],
   cl_autohelp: ["0", "1"],
+  cl_buywheel_donate_key: ["1", "0"],
   cl_buywheel_nonumberpurchasing: ["0", "1"],
   cl_color: ["yellow", "purple", "green", "blue", "orange"],
+  cl_crosshair_friendly_warning: ["1", "0"],
   cl_crosshair_sniper_width: ["1", "2", "3", "4"],
-  cl_dm_buyrandomweapons: ["0", "1"],
+  cl_dm_buyrandomweapons: ["1", "0"],
   cl_hide_avatar_images: ["0", "1", "2"],
   cl_hud_color: [
     "team color",
@@ -195,8 +233,13 @@ const options = {
   cl_radar_rotate: ["true", "false"],
   cl_radar_square_with_scoreboard: ["true", "false"],
   cl_sanitize_player_names: ["false", "true"],
+  cl_silencer_mode: ["0", "1"],
+  cl_sniper_auto_rezoom: ["1", "0"],
+  cl_sniper_delay_unscope: ["0", "1"],
   cl_showloadout: ["true", "false"],
+  cl_show_equipped_character_for_player_avatars: ["false", "true"],
   cl_teamcounter_playercount_instead_of_avatars: ["false", "true"],
+  cl_use_opens_buy_menu: ["true", "false"],
   con_enable: ["true", "false"],
   hud_showtargetid: ["true", "false"],
   r_drawtracers_firstperson: ["true", "false"],
